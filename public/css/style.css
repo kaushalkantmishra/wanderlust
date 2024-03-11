@@ -1,0 +1,275 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-airbnb {
+  color: #fe424d;
+  font-size: 2.5rem;
+  margin-left: 6rem;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fe424d;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+.navbar-nav a{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+}
+.nav-a{
+  font-weight: 500;
+  font-size: 1rem;
+}
+.search-btn {
+  background-color: #fe424d;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0 1rem 0 1rem;
+}
+.search-btn:hover {
+  background-color: #fe424d;
+  color: #fff;
+}
+.search-btn i{
+  display: inline;
+  margin-right: 0.5rem;
+}
+.search-input{
+  border-radius: 25px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  font-size: 1rem;
+}
+.navbar-collapse.show {
+background-color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 0.5rem;
+padding: 2rem;
+margin: 2rem;
+}
+
+.navbar-toggler {
+background-color: transparent; /* Set the initial background color to transparent */
+border: none;
+}
+
+
+
+/* filters */
+.parent-f{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow-x: auto; /* Add overflow property for scrollbar on all screens */
+  scrollbar-width: thin;
+  
+  
+  
+}
+.filter{
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  opacity: 0.7;
+  
+}
+.filter:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p{
+  font-size: 0.8rem;
+}
+.text-toggle {
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 3.25rem;
+  padding: 1rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  margin-top: 0.5rem;
+  
+}
+@media (max-width: 767px) {
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    scrollbar-width: thin;
+  }
+
+  .filter {
+    flex: 0 0 auto;
+    margin: 0 0.5rem;
+  }
+
+  .text-toggle {
+    /* Adjusted styling to keep it on the same line */
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-left:auto; /* Adjusted margin */
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .filters {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+}
+
+
+.tax-info {
+  display: none;
+}
+
+/* Footer */
+
+.footer-info {
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.f-info-social a{
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 0.5rem;
+}
+.f-info-links i {
+  color: #fe424d !important;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Cards */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effects */
+
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: #fff;
+}
+
+/* add new listing form */
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Edit listing */
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.edit-img {
+  max-width: 30rem;
+  max-height: 10rem;
+}
+
+/* Show listing */
+
+.show-img {
+  height: 30vh;
+}
+.btns {
+  display: flex;
+}
+.show-card {
+  padding-right: 0 !important;
+}
+
+/* map */
+#map {
+  height: 400px;
+  width: 125vh;
+}
