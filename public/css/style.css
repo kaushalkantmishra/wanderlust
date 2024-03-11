@@ -257,13 +257,18 @@ border: none;
 }
 
 /* Show listing */
+.card-h, .card-b {
+  margin-left: 20rem;
+}
 
 .show-img {
   height: 30vh;
 }
+
 .btns {
   display: flex;
 }
+
 .show-card {
   padding-right: 0 !important;
 }
@@ -272,4 +277,55 @@ border: none;
 #map {
   height: 400px;
   width: 125vh;
+}
+
+/* Responsive Styles for show listings */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .card-h, .card-b {
+    margin-left: 0; 
+  }
+
+  .show-card {
+    margin-left: 0 !important; 
+    padding-right: 15px !important; 
+  }
+
+  .show-img {
+    height: auto; 
+  }
+
+  #map {
+    width: 100%; 
+    height: 300px; 
+  }
+
+  .card {
+    width: 100%; 
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .show-card {
+    margin-left: 0 !important;
+    padding-right: 15px !important;
+  }
+  .card-h, .card-b {
+    margin-left: 0; 
+  }
+  .show-img {
+    height: auto; 
+  }
+
+  #map {
+    width: 100%;
+    height: 300px; 
+  }
+
+  .card {
+    width: 100%; 
+  }
+
 }
